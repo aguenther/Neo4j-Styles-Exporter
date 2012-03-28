@@ -1,0 +1,7 @@
+Just a little hack which allows you to copy/paste the styles of the Neo4j Data Browser for Chrome or Firefox with Greasemonkey.
+
+Go to Data Browser > View Mode > Style > Export/Import to get your profile JSON, replace it with something else or extend it with data from someone else's JSON.
+Changing the profile data will make the page reload, since the system won't notice it otherwise.
+
+
+Also, this script is currently limited to localhost.
