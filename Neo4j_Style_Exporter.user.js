@@ -236,7 +236,8 @@ function main(){
 /******************************  END MAIN CODE  ******************************/
 //the rest is just the necessary stuff to make function main() run
 //since the URL is unreliable (usually localhost:xxxx, since we tunnel a lot), check the title...
-if(document.getElementsByTagName("title")[0].innerHTML == 'Neo4j Monitoring and Management Tool') { 
+var title = document.getElementsByTagName("title")[0].innerHTML;
+if(title == 'Neo4j Monitoring and Management Tool' || title.search(/^Neo4j - [0-9]\.[0-9]+$/) != -1) { 
     
     var prevEvent, scriptTag;
     
